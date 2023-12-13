@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=65.5.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calculadora-de-aguinaldo"
+dynamic = ["version"]
+authors = [{ name = "Michel Novus", email = "michelnovus@gmail.com" }]
+description = ""
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+]
+
+[tool.setuptools]
+packages = ["aguinaldo"]
+
+
+[tool.setuptools.dynamic]
+version = { attr = "aguinaldo.__version__" }
